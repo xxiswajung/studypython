@@ -7,8 +7,8 @@ avg = round(sum(arr) / n)
 
 min = 2147000000
 
-for idx, x in enumerate(arr):
-    tmp=abs(x-avg)
+for idx, x in enumerate(arr): #enumerate() 까먹지 말기
+    tmp=abs(x-avg) # t < min 이 아님 + 전에 임시변수에 avg와의 차이를 미리 계산해 해당 수가 평균값과 얼마나 멀어졌는지 확인할 필요 있음
     if tmp<min:
         min=tmp
         score=x #평균과 가까운 점수 기록
