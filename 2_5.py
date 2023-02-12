@@ -1,5 +1,5 @@
 n,m=map(int,input().split())
-cnt=[0]*(n+m+3) #정n,m면체끼리 더했을때의 모든 결과를 담는 list
+cnt=[0]*(n+m+3) #정n,m면체끼리 더했을때의 모든 결과를 담는 list, 0으로 
 max=0
 
 for i in range(1,n+1):
