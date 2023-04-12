@@ -59,3 +59,25 @@ if __name__=="__main__":
         b[i]=b[i-1]*(n-i)//i #combination 공식
 
     DFS(0,0)
+
+#######################################
+
+# 이항계수(원래 이렇게 풀어야 함)+라이브러리 사용
+# same as 6_12.py
+
+import itertools as it
+
+n,f=map(int,input().split())
+b=[1]*n
+for i in range(1,n):
+    b[i]=b[i-1]*(n-i)//i
+a=list(range(1,n+1))
+
+for tmp in it.permutations(a):
+    sum=0
+    for L,x in enumerate(tmp):
+        sum+=(b[L]*x)
+    if sum==f:
+        for x in tmp:
+            print(x, end=' ')
+        break
