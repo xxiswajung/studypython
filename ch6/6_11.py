@@ -25,7 +25,7 @@ a=list(map(int,input().split()))
 m=int(input())
 cnt=0
 
-for x in it.combinations(a,k):
+for x in it.combinations(a,k): #a 리스트 중 k개만 뽑
     if sum(x)%m==0:
         cnt+=1
 print(cnt)
