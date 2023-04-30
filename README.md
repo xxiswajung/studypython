@@ -1,6 +1,5 @@
 # studypython
 Studying algorithm and data structure by python
 
-#각종 문제들을 파이썬으로 푼 것 입니다.
-#이해하기 위해 주석을 여러개 달아둔 코드 입니다.
-
+- Upload some algorithm problem solving to my [velog](https://velog.io/@ghkwjd06) written by Korean. 
+- I'm looking for good website(or blog) that I can share algorithm with everyone who are studying coding. If you know some great blog of website that is able to be written by English, please let me know by this repository Issues. 
