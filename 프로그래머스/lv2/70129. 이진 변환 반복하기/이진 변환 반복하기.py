@@ -1,14 +1,3 @@
-def binary(t):
-    ans=''
-    if t==0:
-        return True
-    elif t==1:
-        return '1'+ans
-    else:
-        while t>0:
-            ans=str(t//2)+ans
-            t=t%2
-
 def solution(s):
     zero=0
     cnt=0
