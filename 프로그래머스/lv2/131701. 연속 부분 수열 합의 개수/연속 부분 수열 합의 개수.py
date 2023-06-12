@@ -8,3 +8,15 @@ def solution(elements):
                 res=sum(elements[j:j+i])
             answer.add(res)
     return len(answer)
+
+###########################
+#another solving 
+
+def solution(elements):
+    answer = set()
+    ll = len(elements)
+    elements = elements * 2
+    
+    for i in range(ll) : 
+        for j in range(ll) : 
+            answer.add(sum(elements[j:j+i+1]))
