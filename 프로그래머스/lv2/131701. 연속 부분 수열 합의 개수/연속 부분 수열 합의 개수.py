@@ -20,3 +20,4 @@ def solution(elements):
     for i in range(ll) : 
         for j in range(ll) : 
             answer.add(sum(elements[j:j+i+1]))
+    return len(answer)
