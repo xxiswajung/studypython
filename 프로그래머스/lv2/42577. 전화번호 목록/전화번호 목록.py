@@ -9,6 +9,8 @@ def solution(phone_book):
     return True
 
 ############################
+##문제에선 hash를 이용하라고 했지만 hash보단 아래가 더 빠르고 효율적임
+
 def solution(phone_book):
     answer = True
     phone_book.sort() #문자열을 정렬할땐 숫자 크기대로 정렬되지 않고, 숫자의 유니코드 순대로 정렬된다
