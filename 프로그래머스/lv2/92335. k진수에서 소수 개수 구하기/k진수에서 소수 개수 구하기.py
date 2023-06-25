@@ -11,8 +11,7 @@ def solution(n, k):
         if x=='' or int(x)<2:
             continue
         else:
-            # 3부터 root(k)까지 2씩 증가하며 확인(3, 5, 7...),
-            # 이는 작은 값들의 배수일 때 발생하는 중복을 제거하며 확인(소수 찾기 최적화)
+            #모든 수의 약수는 대칭을 이루므로, 2~제곱근의 범위에서 소수가 없다면 이 수는 소수이다
             for i in range(2, int(int(x)**0.5) + 1):
                 if int(x) % i == 0:
                     chk=False
