@@ -25,5 +25,5 @@ def solution(fees, records):
             stack[car]+=23*60+59-minute
         except:
             stack[car]=23*60+59-minute
-    return [get_fee(minutes, fees) for car, minutes in sorted(stack.items(), key=lambda x:x[0])]
+    return [get_fee(minutes, fees) for car, minutes in sorted(stack.items())]
             
