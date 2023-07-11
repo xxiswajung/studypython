@@ -5,7 +5,7 @@ def solution(skill, skill_trees):
         skill_list=list(skill)
         
         for y in skills:
-            if y in skill:
+            if y in skill_list:
                 if y!=skill_list.pop(0):
                     break
         else:
