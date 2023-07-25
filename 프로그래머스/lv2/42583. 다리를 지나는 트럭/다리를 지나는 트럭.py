@@ -2,11 +2,11 @@ from collections import deque
 
 def solution(bridge_length, weight, truck_weights):
     answer = 0
-    bridge = deque(0 for _ in range(bridge_length))
-    truck_weights=deque(t for t in truck_weights)
-    bridge_weight=0
+    bridge_weight = 0 #시간 줄이기 위한 변수, sum은 오래 걸림 : 현재 다리 위의 무게
+    bridge = deque(0 for _ in range(bridge_length)) #다리
+    truck_weights = deque(t for t in truck_weights)
     
-    while bridge: #다리 위에 트럭이 모두 없을 때 까지 반복
+    while bridge : 
         answer+=1
         bridge_weight-=bridge.popleft()
         
@@ -16,5 +16,5 @@ def solution(bridge_length, weight, truck_weights):
                 bridge.append(truck)
                 bridge_weight+=truck
             else:
-                bridge.append(0) #무게가 넘으면 0을 추가해 다리 길이 유지
+                bridge.append(0)
     return answer
